@@ -1,0 +1,30 @@
+.faq__accordion {
+  h3 {
+    padding: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: map-get(
+      $theme-background-color,
+      background-secondary-color
+    );
+  }
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  p {
+    border: 1px solid #ebebeb;
+    padding: 15px;
+  }
+}
+
+.stats {
+  li {
+    margin-bottom: 30px;
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+}

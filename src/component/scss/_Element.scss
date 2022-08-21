@@ -1,0 +1,54 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.entry-content {
+  margin-bottom: 21px;
+}
+
+a {
+  text-decoration: none;
+  font-size: $normal;
+  &:hover,
+  &:focus {
+    color: #e6e6e6;
+  }
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+section:nth-child(odd) {
+  background-color: map-get(
+    $theme-background-color,
+    background-secondary-color
+  );
+}
+
+.btn__link,
+.caption {
+  transition: 0.3s ease-in-out;
+}
+
+.section__heading {
+  text-align: center;
+  padding-bottom: 28px;
+  h2 {
+    font-size: $heading;
+  }
+}
+
+.stats {
+  margin-top: 30px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Ibarra Real Nova', serif;
+}

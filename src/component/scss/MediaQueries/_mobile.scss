@@ -1,0 +1,19 @@
+@include media(mobile) {
+  .navbar-brand {
+    max-width: 100px;
+    display: block;
+  }
+  .footer {
+    .social {
+      justify-content: flex-start;
+    }
+    .copyright-text {
+      margin-top: 0;
+      justify-content: flex-end;
+    }
+  }
+
+  .portfolio .portfolio__content ul {
+    grid-template-columns: 2fr 2fr;
+  }
+}

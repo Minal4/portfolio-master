@@ -1,0 +1,16 @@
+.btn__link {
+  background-color: map-get($button-color, background-button);
+  color: map-get($button-color, button-color);
+  border-radius: 45px;
+  text-transform: uppercase;
+  border: 0;
+  padding: $btn-vertical-spacing $btn-horizontal-spacing;
+
+  &:hover,
+  &:focus {
+    background-color: map-get($button-color, background-hover-button);
+    color: map-get($theme-color, dark-color);
+    transform: translateY(-15px);
+    box-shadow: 0 16px 29px -17px #727272;
+  }
+}

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;600;700&display=swap');
+
+@import '../src/component/scss/Variables/variables';
+
+@import '../src/component/scss/Element';
+
+@import '../src/component/Header/HeaderStyled';
+
+@import '../src/component/pages/Faq/FaqStyled';
+
+@import '../src/component/pages/Portfolio/PortfolioStyled';
+
+@import '../src/component/pages/Contact/contactStyled';
+
+@import '../src/component/scss/about';
+
+@import '../src/component/Footer/footerStyled';
+
+@import '../src/component/scss/Variables/colors';
+
+@import '../src/component/scss/btn';
+
+@import '../src/component/scss/gap';
+
+@import '../src/component/scss/color';
+
+@import '../src/component/scss/mixin';
+
+@import '../src/component/scss/MediaQueries/media';
