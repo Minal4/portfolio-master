@@ -9,9 +9,10 @@
 a {
   text-decoration: none;
   font-size: $normal;
+
   &:hover,
   &:focus {
-    color: #e6e6e6;
+    color: #05a394;
   }
 }
 
@@ -21,10 +22,8 @@ ul {
 }
 
 section:nth-child(odd) {
-  background-color: map-get(
-    $theme-background-color,
-    background-secondary-color
-  );
+  background-color: map-get($theme-background-color,
+      background-secondary-color);
 }
 
 .btn__link,
@@ -35,6 +34,7 @@ section:nth-child(odd) {
 .section__heading {
   text-align: center;
   padding-bottom: 28px;
+
   h2 {
     font-size: $heading;
   }

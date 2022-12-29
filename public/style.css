@@ -13,7 +13,7 @@ a {
   font-size: clamp(18px, 3.5vw, 20px);
 }
 a:hover, a:focus {
-  color: #e6e6e6;
+  color: #05a394;
 }
 
 ul {
@@ -93,10 +93,6 @@ header {
   font-size: 1.5rem;
 }
 
-.progressbar * {
-  height: 5px !important;
-}
-
 .portfolio .portfolio__content ul {
   display: grid;
   grid-template-columns: 1fr;
@@ -143,6 +139,7 @@ header {
 .contact__image {
   display: flex;
   justify-content: center;
+  height: 100%;
 }
 .contact__image img {
   width: 60%;
