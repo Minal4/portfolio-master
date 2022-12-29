@@ -1,14 +1,11 @@
 import React from 'react';
-import scroller from '../../component/images/scroller.png';
 import { NavLink } from 'react-router-dom';
 
 export const Header = () => {
   return (
     <header>
       <div id="waterHolder">
-        {/* <a className="scroller" href="#features">
-          <img src={scroller} className="img-responsive" alt="scroller" />
-        </a> */}
+
         <div className="header__top">
           <nav className="navbar navbar-expand-lg navbar-light">
             <div className="container">

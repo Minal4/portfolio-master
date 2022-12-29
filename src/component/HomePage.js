@@ -6,8 +6,16 @@ import { Main } from './main/Main';
 import { Contact } from './pages/Contact/Contact';
 import { Faq } from './pages/Faq/Faq';
 import { Portfolio } from './pages/Portfolio/Portfolio';
+import { useRef, useEffect } from 'react';
+
 
 export const HomePage = () => {
+  const ref = useRef();
+  // console.log(ref.current, 'object')
+  useEffect(() => {
+    const el2 = ref.current;
+    console.log(el2); // 👈️ element here
+  }, []);
   return (
     <BrowserRouter>
       <Header />
