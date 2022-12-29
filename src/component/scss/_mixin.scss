@@ -16,6 +16,13 @@
   -o-border-radius: $radius;
 }
 
+@mixin transform($transform) {
+  -moz-transform: $transform;
+  -o-transform: $transform;
+  -webkit-transform: $transform;
+  transform: $transform;
+}
+
 @mixin transition($transition) {
   -moz-transition: $transition;
   -o-transition: $transition;
@@ -24,37 +31,37 @@
 }
 
 @mixin media($res) {
-  @if mobile == $res {
+  @if mobile==$res {
     @media only screen and (min-width: $mobile_width) {
       @content;
     }
   }
 
-  @if mobile_horizontal == $res {
+  @if mobile_horizontal==$res {
     @media only screen and (min-width: $mobile_horizontal) {
       @content;
     }
   }
 
-  @if tablet == $res {
+  @if tablet==$res {
     @media only screen and (min-width: $tablet_width) {
       @content;
     }
   }
 
-  @if desktop == $res {
+  @if desktop==$res {
     @media only screen and (min-width: $desktop_width) {
       @content;
     }
   }
 
-  @if wide == $res {
+  @if wide==$res {
     @media only screen and (min-width: $wide_width) {
       @content;
     }
   }
 
-  @if large == $res {
+  @if large==$res {
     @media only screen and (min-width: $large_screen) {
       @content;
     }

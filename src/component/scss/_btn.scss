@@ -1,5 +1,6 @@
 .btn__link {
   background-color: map-get($button-color, background-button);
+  margin-top: clamp(21px, 3vw, 35px);
   color: map-get($button-color, button-color);
   border-radius: 45px;
   text-transform: uppercase;
@@ -9,8 +10,7 @@
   &:hover,
   &:focus {
     background-color: map-get($button-color, background-hover-button);
-    color: map-get($theme-color, dark-color);
-    transform: translateY(-15px);
+    color: map-get($theme-color, button-color);
     box-shadow: 0 16px 29px -17px #727272;
   }
 }

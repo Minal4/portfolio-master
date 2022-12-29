@@ -62,6 +62,31 @@ h6 {
 .header__top .navbar .navbar-nav a {
   font-size: 14px;
   text-transform: uppercase;
+  position: relative;
+  transition: 0.5s ease-in-out;
+}
+.header__top .navbar .navbar-nav a:before {
+  position: absolute;
+  opacity: 0;
+  content: "";
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3px;
+  height: 3px;
+  background-color: #05a394;
+}
+.header__top .navbar .navbar-nav a.active {
+  color: #05a394;
+}
+.header__top .navbar .navbar-nav a.active:before {
+  opacity: 1;
+}
+.header__top .navbar .navbar-nav a:hover, .header__top .navbar .navbar-nav a:focus {
+  color: #05a394;
+}
+.header__top .navbar .navbar-nav a:hover:before, .header__top .navbar .navbar-nav a:focus:before {
+  opacity: 1;
 }
 
 header {
@@ -174,6 +199,29 @@ header {
   font-size: clamp(42px, 3.5vw, 65px);
 }
 
+.marque {
+  font-size: 200px;
+  text-transform: uppercase;
+  font-weight: 700;
+  opacity: 0.2;
+  animation: marq 50s ease forwards;
+  display: block;
+  margin-right: 10px;
+}
+
+@keyframes marq {
+  50% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(-300%);
+  }
+}
+.text-slide {
+  overflow: hidden;
+  display: flex;
+}
+
 .footer {
   padding: 20px 0;
 }
@@ -196,6 +244,7 @@ header {
 
 .btn__link {
   background-color: #000;
+  margin-top: clamp(21px, 3vw, 35px);
   color: #fff;
   border-radius: 45px;
   text-transform: uppercase;
@@ -203,9 +252,7 @@ header {
   padding: clamp(10px, 3.5vw, 15px) clamp(21px, 3.5vw, 45px);
 }
 .btn__link:hover, .btn__link:focus {
-  background-color: #f2f5f8;
-  color: #333;
-  transform: translateY(-15px);
+  background-color: #05a394;
   box-shadow: 0 16px 29px -17px #727272;
 }
 
