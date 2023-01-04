@@ -29,15 +29,15 @@ export const Faq = (props) => {
         <div className="section__heading">
           <h2>FAQ</h2>
         </div>
-        <div className="row gx-5">
-          <div className="col-md-6">
+        <div className="inner-container">
+          <div className="faq-content">
             <div className="faq__accordion">
               {data.map((item, index) => {
                 return <Accordion key={index} item={item} />;
               })}
             </div>
           </div>
-          <div className="col-md-6">
+          <div className="progress">
             <Progress />
           </div>
         </div>

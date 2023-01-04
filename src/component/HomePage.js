@@ -19,10 +19,12 @@ export const HomePage = () => {
   return (
     <BrowserRouter>
       <Header />
+      <main className='main'>
       <Main />
       <Portfolio />
       <Faq />
       <Contact />
+      </main>
       <Footer />
       <Routes>
         <Route path="portfolio" element={<Portfolio />}></Route>

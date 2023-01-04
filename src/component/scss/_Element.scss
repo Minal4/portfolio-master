@@ -2,12 +2,28 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+body {
+  margin: 0;
+}
+
 .entry-content {
   margin-bottom: 21px;
 }
 
+.container,
+.header__top {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+button,
+input[type="submit"] {
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -50,4 +66,5 @@ h4,
 h5,
 h6 {
   font-family: 'Ibarra Real Nova', serif;
+  margin-top: 0;
 }

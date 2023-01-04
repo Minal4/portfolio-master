@@ -13,7 +13,7 @@ export const Main = () => {
   console.log(Name, 'object')
   return (
     <>
-      <div className="section about-section">
+      <section className="section about-section">
         <div className="inner_wrap container">
           <div className="about__inner">
             <h2>{`Minal - FrontEnd Web Designer & Enthusiast`}</h2>
@@ -26,14 +26,14 @@ export const Main = () => {
               </p>
               <div className="excerpt-btn">
                 <button className="btn__link">Contact us</button>
-                <a href={ExampleDoc} download="resume" target='_blank' rel='noreferrer'>
+                <a href={ExampleDoc} download="resume" target='_blank' rel='noopener noreferrer'>
                   <button className='btn__link'>Download CV</button>
                 </a>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <div className="text-slide"><div className='inner-slide'>{Name}</div></div>
     </>
   );

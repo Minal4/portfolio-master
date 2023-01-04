@@ -3,20 +3,23 @@
     left: 0;
     width: 100%;
     z-index: 1;
-
-    .custom-nav {
-      justify-content: flex-end;
+    h1 {
+      margin: 0;
     }
 
     .navbar-nav {
+      display: flex;
+      gap: 10px;
       a {
         font-size: 14px;
         text-transform: uppercase;
         position: relative;
         transition: 0.5s ease-in-out;
+        padding: 10px 5px;
 
         &:before {
           position: absolute;
+          border-radius: 50%;
           opacity: 0;
           content: "";
           bottom: 5px;
@@ -50,4 +53,11 @@
 
 header {
   border-bottom: 1px solid #ebebeb;
+  padding: 15px 0;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
