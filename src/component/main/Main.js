@@ -1,5 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from "react";
+import ExampleDoc from '../files/resume.pdf';
 
 export const Main = () => {
   const [Name, setName] = useState();
@@ -25,7 +26,9 @@ export const Main = () => {
               </p>
               <div className="excerpt-btn">
                 <button className="btn__link">Contact us</button>
-                <a className="btn__link" href="../files/resume.pdf">Contact us</a>
+                <a href={ExampleDoc} download="resume" target='_blank' rel='noreferrer'>
+                  <button className='btn__link'>Download CV</button>
+                </a>
               </div>
             </div>
           </div>

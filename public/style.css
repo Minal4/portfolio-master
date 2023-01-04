@@ -10,7 +10,6 @@
 
 a {
   text-decoration: none;
-  font-size: clamp(18px, 3.5vw, 20px);
 }
 a:hover, a:focus {
   color: #05a394;
@@ -199,6 +198,11 @@ header {
   font-size: clamp(42px, 3.5vw, 65px);
 }
 
+.excerpt-btn {
+  display: flex;
+  gap: 15px;
+}
+
 .marque {
   font-size: 200px;
   text-transform: uppercase;
@@ -216,7 +220,7 @@ header {
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-300%);
   }
 }
 .text-slide {
@@ -224,9 +228,9 @@ header {
 }
 
 .inner-slide {
-  -moz-animation: marquee 10s linear infinite;
-  -webkit-animation: marquee 10s linear infinite;
-  animation: marquee 10s linear infinite;
+  -moz-animation: marquee 20s linear infinite;
+  -webkit-animation: marquee 20s linear infinite;
+  animation: marquee 20s linear infinite;
   display: flex;
 }
 
