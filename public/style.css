@@ -204,21 +204,29 @@ header {
   text-transform: uppercase;
   font-weight: 700;
   opacity: 0.2;
-  animation: marq 50s ease forwards;
   display: block;
   margin-right: 10px;
 }
+.marque:hover {
+  animation-play-state: paused;
+}
 
-@keyframes marq {
-  50% {
-    transform: translateX(-300%);
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
   }
   100% {
-    transform: translateX(-300%);
+    transform: translateX(-100%);
   }
 }
 .text-slide {
   overflow: hidden;
+}
+
+.inner-slide {
+  -moz-animation: marquee 10s linear infinite;
+  -webkit-animation: marquee 10s linear infinite;
+  animation: marquee 10s linear infinite;
   display: flex;
 }
 

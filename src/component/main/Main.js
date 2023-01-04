@@ -30,7 +30,7 @@ export const Main = () => {
           </div>
         </div>
       </div>
-      <div className="text-slide">{Name}</div>
+      <div className="text-slide"><div className='inner-slide'>{Name}</div></div>
     </>
   );
 };
