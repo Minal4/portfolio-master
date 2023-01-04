@@ -25,6 +25,7 @@ export const Main = () => {
               </p>
               <div className="excerpt-btn">
                 <button className="btn__link">Contact us</button>
+                <a className="btn__link" href="../files/resume.pdf">Contact us</a>
               </div>
             </div>
           </div>
