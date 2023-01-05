@@ -40,6 +40,14 @@
   }
 
   .input-row {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
   }
+}
+
+.contact .inner-container {
+  grid-template-columns: 1fr;
+  display: grid;
+  grid-gap: 40px;
 }

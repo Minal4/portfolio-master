@@ -19,7 +19,12 @@
     grid-template-columns: 2fr 2fr;
   }
 
-  .faq .inner-container {
+  .faq .inner-container,
+  .contact .inner-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact .input-row {
     grid-template-columns: 1fr 1fr;
   }
 }
